@@ -265,4 +265,9 @@ footer{
     padding: 5px;
     font-family: sans-serif;
     border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+.instagram:hover{
+    background: linear-gradient(45deg, #e0bd5c, #eb7317, #dd2377, #9b2cc7, #404ddb);
 }
