@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quantitativo de Tijolo</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Quantitativo de Tijolo</h1>
+    </header>
+    <br>
+    <main>
+        <section class="pai">
+        <div class="primeOne">
+            <h2>Seja bem-vindo(a)!</h2>
+            <p>Para fazer os cálculos quantitativos de tijolos com margem de segurança é bem simples e prático! Abaixo você terá alguns campos para serem preenchidas como Largura x Altura das dimensões em áreas e o tipo de tijolo. Ex: Tijolo 14x14 ou Tijolo 21x21 etc...</p>
+            <p>Clicando no botão cálcular, você obterá o cálculo completo.</p>
+        </div>
+        <br><br>
+        <div class="dimensoes">
+            <div class="larguraAltura">
+                
+                <label for="" class="label">Adicione o valor da largura e da altura das dimensões da área em metros²</label>
+
+                <div class="caixaInput">
+                <input id="larguraDimensao" type="text" placeholder="Adicione o valor da largura" class="inputs" required> X <input id="alturaDimensao" type="text" placeholder="Adicione o valor da altura" class="inputs" required>
+            </div>
+            </div>
+
+                <div class="areaTijolos">
+                    <label for="">Adicione o tamanho do tijolo</label>
+                    <br>
+                    <div class="calculoTijolo">
+                        <input type="text" id="tijolo1" placeholder="Adicione o tamanho do tijolo"> X <input type="text" id="tijolo2" placeholder="Adicione o tamanho do tijolo">
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <br>
+
+<br>
+        <div class="resultados">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Largura x Alt</th>
+                        <th>Quantitativo Tijolos</th>
+                        <th>Margem 5%</th>
+                        <th>Margem 10%</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;" id="resultLH"></td>
+                        <td style="text-align: center;" id="quantitativo"></td>
+                        <td style="text-align: center;" id="margem5"></td>
+                        <td style="text-align: center;" id="margem10"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br>
+        <div class="informacaos">
+            <p id="larguraAlturas"></p>
+            <p id="QuantTijolos"></p>
+        </div>
+    
+        <br>
+        <div class="botaoCalcular">
+            <button id="calcular">Calcular</button>
+        </div>
+    </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
